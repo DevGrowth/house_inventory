@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Devgrowth Community",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "dotenv": "^8.2.0",
