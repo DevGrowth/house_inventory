@@ -2,10 +2,23 @@ import { UserModel } from "../models/user";
 
 export class AuthController {
 
+
+	login(email,password){
+	
+	}
+
+	
+	signUp(name,surname,email,password){
+
+		
+	}
+
+	
+
     signupValidationData(email, name, surname, password) {       
-        if(this.#validateEmail(email)===true && this.#validateNome(name) === true 
-        && this.#validateNome(surname) === true &&this.#validatePassword(password)===true){
-            new UserModel (email, name, surname,password); 
+        if(this.#validateEmail(email)===true && this.#validateName(name) === true 
+        && this.#validateName(surname) === true && this.#validatePassword(password)===true){
+          return  new UserModel (email, name, surname,password); 
         }else{
             return "Verifica os dados introduzidos";
         }
@@ -19,7 +32,7 @@ export class AuthController {
         return false;
     }
 
-    #validateNome(name){
+    #validateName(name){
         let regExp = /^[a-zA-Z]+(([',.-][a-zA-Z])[a-zA-Z]*)*$/;
         if (regExp.test(name) == true) {
             return true;
