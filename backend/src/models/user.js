@@ -12,7 +12,4 @@ export class UserModel {
         this.#signup(this.#email, this.#name,this.#surname,this.#password);
     }
 
-    #signup(email, nome, surname, password) {
-      // TODO
-    }
 }
