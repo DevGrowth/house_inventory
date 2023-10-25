@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:house_inventory/configs/theme.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: AppTheme.PRIMARYCOLOR,
+      appBar: AppBar(
+        title: Text("House Inventory"),
+        centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [Text("Bem vindo")],
+        ),
+      ),
+    );
   }
 }
