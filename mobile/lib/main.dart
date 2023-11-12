@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:house_inventory/configs/theme.dart';
 import 'package:house_inventory/pages/home.dart';
+import 'package:house_inventory/pages/login.dart';
 import 'package:house_inventory/pages/welcome.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
           primaryColor: AppTheme.PRIMARYCOLOR,
           primaryColorDark: AppTheme.SECONDARYCOLOR),
-      home: Welcome(),
+      home: Login(),
     );
   }
 }
