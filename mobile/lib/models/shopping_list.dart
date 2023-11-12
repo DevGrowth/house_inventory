@@ -1,11 +1,13 @@
 import 'package:house_inventory/models/base_model.dart';
 
+
 import 'list_line.dart';
 
 class ShoppingList extends BaseModel {
   String userUUID;
   String categoryUUID;
   String statusUUID;
+
   List<ListLine> items = [];
   double total;
 
@@ -14,11 +16,14 @@ class ShoppingList extends BaseModel {
       required this.userUUID,
       required this.categoryUUID,
       required this.statusUUID,
+
       required this.total,
+
       int? id,
       String? created_at,
       String? updated_at})
       : super(uuid, id, created_at, updated_at);
+
 
   factory ShoppingList.fromMap(Map<String, dynamic> map) {
     return ShoppingList(
@@ -49,4 +54,5 @@ class ShoppingList extends BaseModel {
 
     return total;
   }
+
 }
