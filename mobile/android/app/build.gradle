@@ -48,11 +48,9 @@ android {
         applicationId "com.gquende.house_inventory"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-<<<<<<< HEAD
+
         minSdkVersion 21
-=======
-        minSdkVersion flutter.minSdkVersion
->>>>>>> 44fcec56438fdc8854143b37579b52a039c3f07b
+
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

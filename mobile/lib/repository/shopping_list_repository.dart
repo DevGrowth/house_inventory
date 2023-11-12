@@ -13,7 +13,6 @@ class ShoppingListRepository {
   Future<List<ShoppingList>> getAllList() async {
     try {
       var list = <ShoppingList>[];
-
       var result = await this.appDatabase.db?.rawQuery(
         "SELECT * from ${_table}",
         [],
