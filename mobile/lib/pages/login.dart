@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:house_inventory/configs/theme.dart';
+import 'package:house_inventory/pages/home.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -119,6 +121,8 @@ class _LoginState extends State<Login> {
                   GestureDetector(
                     onTap: () {
                       debugPrint("Clicked on Login");
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Home()));
                     },
                     child: Container(
                       width: size.width,
@@ -181,6 +185,23 @@ class _LoginState extends State<Login> {
                     children: [
                       GestureDetector(
                         onTap: () {
+                          debugPrint("Clicked on login with Google");
+                        },
+                        child: Container(
+                          width: 40,
+                          height: 40,
+                          child: Icon(
+                            MdiIcons.google,
+                            size: 40,
+                            color: Color(0xff4285F4),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      GestureDetector(
+                        onTap: () {
                           debugPrint("Clicked on login with Facebook");
                         },
                         child: Container(
@@ -188,7 +209,7 @@ class _LoginState extends State<Login> {
                           height: 40,
                           child: Icon(
                             Icons.facebook,
-                            size: 50,
+                            size: 40,
                             color: Colors.blue,
                           ),
                         ),
