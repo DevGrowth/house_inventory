@@ -4,18 +4,23 @@ class User extends BaseModel {
   String username;
   String name;
   String surname;
+
   String? password;
+
 
   User(
       {required String uuid,
       required this.username,
       required this.name,
       required this.surname,
+
       this.password,
+
       int? id,
       String? created_at,
       String? updated_at})
       : super(uuid, id, created_at, updated_at);
+
 
   factory User.fromMap(Map<String, dynamic> map) {
     return User(
@@ -37,4 +42,5 @@ class User extends BaseModel {
       "updated_at": this.updated_at
     };
   }
+
 }
