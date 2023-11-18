@@ -6,7 +6,7 @@ class ShoppingList extends BaseModel {
   String userUUID;
   String categoryUUID;
   String statusUUID;
-  List<ListLine> items = [];
+  List<ShopListItem> items = [];
   double total;
 
   ShoppingList(
